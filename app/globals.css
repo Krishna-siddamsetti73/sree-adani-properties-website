@@ -12,7 +12,7 @@ body { margin: 0; background: var(--brand-paper); font-family: var(--font-inter)
 .reveal { animation: rise-in .8s cubic-bezier(.2,.8,.2,1) both; }
 @keyframes rise-in { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
-.site-nav { position: sticky; top: 0; z-index: 50; border-bottom: 1px solid rgb(255 255 255 / .15); background: rgb(64 52 140 / .94); box-shadow: 0 8px 30px rgb(34 38 78 / .12); backdrop-filter: blur(14px); transition: background .3s ease, box-shadow .3s ease; }
+.site-nav { position: fixed; top: 0;width: 100% ; z-index: 50; border-bottom: 1px solid rgb(255 255 255 / .15); background: rgb(64 52 140 / .94); box-shadow: 0 8px 30px rgb(34 38 78 / .12); backdrop-filter: blur(14px); transition: background .3s ease, box-shadow .3s ease; }
 .hero-carousel { position: relative; min-height: min(88vh, 850px); overflow: hidden; background: #40348C; }
 .hero-slide { position: absolute; inset: 0; visibility: hidden; opacity: 0; transition: opacity 900ms ease, visibility 900ms ease; }
 .hero-slide.is-active { visibility: visible; opacity: 1; }

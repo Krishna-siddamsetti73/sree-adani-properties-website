@@ -26,7 +26,7 @@ export function Logo({ dark = false }: { dark?: boolean }) {
       className="flex items-center gap-3"
       aria-label="Sree Avani Properties home"
     >
-      <div className="relative h-24 w-24 shrink-0">
+      <div className="relative h-15 w-24 shrink-0">
         <Image
           src={logoUrl}
           alt="Sree Avani Properties logo"
